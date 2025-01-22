@@ -1,104 +1,237 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Gustavo Rosales</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/GustavoRosalesHeadshot.jpg" alt="Gustavo Rosales" /></a>
-					<h1><strong>I am Gustavo (Gus) Rosales,</strong> software engineer,<br />
-					first-generation college student, tech enthusiast,<br />
-					collaborative, future-oriented.</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gustavo Rosales - Software Engineer</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: '#49bf9d',
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body class="bg-gray-50">
+	<!-- Hero Section -->
+	<div class="min-h-screen flex items-center">
+		<div class="container mx-auto px-4 py-8 md:py-16">
+			<div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+				<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-xl">
+					<img src="images/GustavoRosalesHeadshot.jpg" alt="Gustavo Rosales"
+						class="w-full h-full object-cover">
 				</div>
-			</header>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About</h2>
-						</header>
-						<p>Graduating from the College of Staten Island, CUNY, in the Class of 2023, I am proud to be a first-generation college graduate. My journey through higher education has been enriched by my involvement with various esteemed programs such as ProjectBasta and CodePath. These experiences have not only enhanced my technical expertise but also my ability to collaborate and lead within diverse teams. Most recently, my roles as a SWE Fellow at Headstarter and a Tech Fellow at CodePath have provided me with opportunities to work on impactful projects and mentor aspiring technologists, reinforcing my commitment to continuous learning and community engagement.</p>
-						<ul class="actions">
-							<li><a href="/GustavoRosales.pdf" class="button">Resume</a></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Recent Work + Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/CodePath2.jpeg" class="image fit thumb"><img src="images/CodePath2.jpeg" alt="Gustavo Rosales" /></a>
-								<h3>Tech Fellow</h3>
-								<p>Assisting students in Technical Interview Prep + Web Developement.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/Alveus.jpeg" class="image fit thumb" style="width: 90%;"><img src="images/Alveus.jpeg" alt="Gustavo Rosales" /></a>
-								<h3>Open Source Contributor</h3>
-								<p>In December 2023, I fixed a scroll position bug in Alveusgg and adjusted the refetchOnWindowFocus setting, collaborating with maintainers and the community.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/Google.webp" class="image fit thumb"><img src="images/Google.webp" alt="Gustavo Rosales" /></a>
-								<h3>G-SWEP Fellow</h3>
-								<p>Mastering Data Structures & Algorithms with Google SWE mentor.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/MessageBoard2.png" class="image fit thumb"><img src="images/MessageBoard2.png" alt="Gustavo Rosales" /></a>
-								<h3>Message Board</h3>
-								<p>I developed a PHP social web app with a team of 2, using MySQL for user posts, likes, and comments, and implemented a JavaScript username availability checker.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/BloombergLP.png" class="image fit thumb"><img src="images/BloombergLP.png" alt="Gustavo Rosales" /></a>
-								<h3>Bloomberg Tech Lab Fellow</h3>
-								<p>Interactive sessions focused on techincal SWE interview skills + portfolio manager project.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/BugTracker.png" class="image fit thumb"><img src="images/BugTracker.png" alt="Gustavo Rosales" /></a>
-								<h3>Bug/Issue Tracker</h3>
-								<p>I developed a TypeScript web app with Next.js, MongoDB, and tRPC for tracking bugs and feature issues, implementing Auth0 for authentication and storing data in MongoDB.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="https://github.com/okGus" class="button">Github</a></li>
-						</ul>
-					</section>
+				<div class="text-center md:text-left">
+					<h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+						I am Gustavo (Gus) Rosales
+					</h1>
+					<p class="text-xl text-gray-600 mb-6">
+						Software Engineer • First-Generation College Student • Tech Enthusiast
+					</p>
+					<div class="flex gap-4 justify-center md:justify-start">
+						<a href="/GustavoRosales.pdf"
+							class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-colors">
+							View Resume
+						</a>
+						<a href="#projects"
+							class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition-colors">
+							See My Work
+						</a>
+					</div>
+				</div>
 			</div>
+		</div>
+	</div>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://github.com/okGus" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="https://www.linkedin.com/in/gus-rosales/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="rosalesagustavo@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+	<!-- About Section -->
+	<section id="about" class="py-12 bg-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">About Me</h2>
+			<div class="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed">
+				<p>
+					Graduating from the College of Staten Island, CUNY, in the Class of 2023, I am proud to be a
+					first-generation college graduate. My journey through higher education has been enriched by my
+					involvement with various esteemed programs such as ProjectBasta, CodePath, and Headstarter AI. These
+					experiences have not only enhanced my technical expertise but also my ability to collaborate and
+					lead within diverse teams. I'm passionate about leveraging technology to solve real-world problems
+					and continuously expanding my skill set in the ever-evolving field of software engineering.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects" class="py-16 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Recent Work + Projects</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<!-- DevConnect -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/devconnect.jpg" alt="DevConnect" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">DevConnect</h3>
+						<p class="text-gray-600">Full-stack web app using Next.js, AWS (DynamoDB, ElastiCache), and
+							Clerk. Enables developers to showcase websites with 260+ users.</p>
+					</div>
 				</div>
-			</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<!-- Rilla App -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/rilla.jpg" alt="Rilla App" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Rilla App</h3>
+						<p class="text-gray-600">Developed sales management features with Next.js, Clerk, AWS. Attracted
+							160 users with real-time data management.</p>
+					</div>
+				</div>
 
-	</body>
+				<!-- Memora -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/memora.jpg" alt="Memora" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Memora</h3>
+						<p class="text-gray-600">AI-powered flashcard generator using Next.js, Stripe, Firebase, AWS.
+							Growing user base of 27 active users.</p>
+					</div>
+				</div>
+
+				<!-- CodePath -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/CodePath2.jpeg" alt="CodePath" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Tech Fellow @ CodePath</h3>
+						<p class="text-gray-600">Collaborating with industry professionals to deliver technical
+							interview preparation and guidance to students.</p>
+					</div>
+				</div>
+
+				<!-- Headstarter -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/headstarter.jpg" alt="Headstarter" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">SWE Fellow @ Headstarter AI</h3>
+						<p class="text-gray-600">Built and deployed 5 AI projects using React, Next.js, Firebase, and
+							Clerk. Developed interactive customer support agent.</p>
+					</div>
+				</div>
+
+				<!-- Entrepreneurs of Tomorrow -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/eot.jpg" alt="Entrepreneurs of Tomorrow" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Software Developer @ EOT</h3>
+						<p class="text-gray-600">Partnered with Duke University students to develop incubator platform
+							with web3 integration.</p>
+					</div>
+				</div>
+
+				<!-- Alveus -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/Alveus.jpeg" alt="Alveus" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Open Source Contributor</h3>
+						<p class="text-gray-600">Fixed scroll position bug in Alveusgg and adjusted the
+							refetchOnWindowFocus setting, collaborating with maintainers.</p>
+					</div>
+				</div>
+
+				<!-- Google -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/Google.webp" alt="Google" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">G-SWEP Fellow</h3>
+						<p class="text-gray-600">Mastered Data Structures & Algorithms with guidance from a Google SWE
+							mentor, enhancing problem-solving skills.</p>
+					</div>
+				</div>
+
+				<!-- Bloomberg -->
+				<div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
+					<img src="images/BloombergLP.png" alt="Bloomberg" class="w-full h-48 object-cover">
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-800 mb-2">Bloomberg Tech Lab Fellow</h3>
+						<p class="text-gray-600">Participated in interactive sessions focused on technical SWE interview
+							skills and portfolio manager project development.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Section -->
+	<section id="skills" class="py-16 bg-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Skills</h2>
+			<div class="max-w-3xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div>
+						<h3 class="text-xl font-bold text-gray-800 mb-4">Languages</h3>
+						<ul class="text-gray-600 space-y-2">
+							<li>Python</li>
+							<li>SQL</li>
+							<li>TypeScript</li>
+							<li>JavaScript</li>
+							<li>C++</li>
+							<li>PHP</li>
+							<li>Rust</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-gray-800 mb-4">Technologies</h3>
+						<ul class="text-gray-600 space-y-2">
+							<li>Next.js</li>
+							<li>React</li>
+							<li>MongoDB</li>
+							<li>MySQL</li>
+							<li>AWS</li>
+							<li>Firebase</li>
+							<li>OpenAI</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-gray-800 mb-4">Tools</h3>
+						<ul class="text-gray-600 space-y-2">
+							<li>Git/Github</li>
+							<li>Linux</li>
+							<li>VSCode</li>
+							<li>Visual Studio</li>
+							<li>Docker</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-900 text-white py-12">
+		<div class="container mx-auto px-4">
+			<div class="flex flex-col items-center gap-6">
+				<div class="flex gap-6 text-2xl">
+					<a href="https://github.com/okGus" class="hover:text-primary transition-colors">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/gus-rosales/" class="hover:text-primary transition-colors">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="mailto:rosalesagustavo@gmail.com" class="hover:text-primary transition-colors">
+						<i class="fas fa-envelope"></i>
+					</a>
+				</div>
+				<p class="text-gray-400 text-sm">
+					&copy; 2024 Gustavo Rosales. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
